@@ -8,7 +8,10 @@ const AZURE_STORAGE_CONTAINER = import.meta.env.VITE_AZURE_STORAGE_CONTAINER || 
 const AZURE_STORAGE_SAS = import.meta.env.VITE_AZURE_STORAGE_SAS_TOKEN || '';
 const AZURE_AD_CLIENT_ID = '5c90d1bc-43ce-4737-ba5e-659583441194';
 const AZURE_AD_TENANT = '87902317-6752-4f33-8bfc-1f73e9287d66';
-const AZURE_AD_REDIRECT_URI = window.location.origin;
+const AZURE_AD_REDIRECT_URI = [
+  'http://localhost:8080',
+  'https://purple-flower-0eb5ad90f.1.azurestaticapps.net'
+];
 
 export const azureConfig = {
   api: {

@@ -7,7 +7,10 @@ import { Configuration, LogLevel } from '@azure/msal-browser';
 const clientId = '5c90d1bc-43ce-4737-ba5e-659583441194';
 const tenantId = '87902317-6752-4f33-8bfc-1f73e9287d66';
 //const signInPolicy = import.meta.env.VITE_AZURE_AD_B2C_POLICY_SIGNIN || 'B2C_1_signupsignin';
-const redirectUri = window.location.origin
+const redirectUris = [
+  'http://localhost:8080',
+  'https://purple-flower-0eb5ad90f.1.azurestaticapps.net'
+];
 
 // B2C authority URLs
 // const b2cPolicies = {
